@@ -1,0 +1,33 @@
+include LICENSE
+include requirements.txt
+include README.rst
+include MODERNIZATION.md
+include pyproject.toml
+include celloracle/version.py
+
+# Never ship caches, byte-code or OS cruft.
+global-exclude *.py[cod]
+global-exclude __pycache__
+global-exclude .DS_Store
+prune .pytest_cache
+prune .github
+
+exclude docs
+exclude docs/*
+exclude docs/*/*
+exclude docs/*/*/*
+exclude docs/*/*/*/*
+exclude docs/*/*/*/*/*
+exclude docs/*/*/*/*/*/*
+exclude docs/*/*/*/*/*/*/*
+exclude other_files
+exclude other_files/*
+exclude other_files/*/*
+exclude other_files/*/*/*
+exclude other_files/*/*/*/*
+exclude other_files/*/*/*/*/*
+exclude celloracle/data/TFinfo_data/*
+exclude celloracle/data/promoter_base_GRN/*
+exclude celloracle/data/tutorial_data/*
+exclude celloracle/data/motif_data/*
+exclude celloracle/data/anndata/*

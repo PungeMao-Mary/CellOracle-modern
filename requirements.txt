@@ -1,0 +1,29 @@
+# CellOracle runtime dependencies.
+#
+# The stack is intentionally unpinned at the top so that CellOracle can be
+# installed against current NumPy 2.x / pandas 2.x-3.x on modern Python.
+# The compiled Cython extension used by the old `velocyto` dependency is no
+# longer required: the handful of velocity routines CellOracle needs are
+# bundled in `celloracle.trajectory._velocity_compat`.
+
+numpy>=1.24
+scipy>=1.10
+pandas>=2.0
+numba>=0.57
+scikit-learn>=1.2
+matplotlib>=3.6
+seaborn>=0.12
+h5py>=3.8
+anndata>=0.9
+scanpy>=1.9
+joblib>=1.2
+tqdm>=4.64
+pyarrow>=10.0
+networkx>=3.0
+umap-learn>=0.5
+
+# Optional but strongly recommended for the full CellOracle feature set:
+#   goatools  -> GO enrichment (celloracle.go_analysis)
+#   igraph    -> graph backends used by scanpy / network utilities
+goatools>=1.0
+igraph>=0.10.1
