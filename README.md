@@ -10,6 +10,8 @@ CellOracle is a python library for in silico gene perturbation analyses using si
 
 This fork retains the upstream license terms in [LICENSE](LICENSE), including its restriction to non-commercial academic use. It is not licensed under an unrestricted standard Apache-2.0 license.
 
+Large tutorial datasets, reference tables, generated documentation, and build archives are not committed to this source repository. Data loader functions may download their datasets on first use; offline use and some optional motif or enrichment workflows require additional data files.
+
 For more information, please read our paper: [Dissecting cell identity via network inference and in silico gene perturbation](https://www.nature.com/articles/s41586-022-05688-9).
 
 
